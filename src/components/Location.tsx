@@ -48,7 +48,9 @@ export function Location() {
 
             {/* Welcoming Paragraph - Simple and complementary */}
             <p className="text-[#D9D9D9] text-lg mb-10 leading-relaxed max-w-md">
-              Nosso espaço é para quem busca resultado <br /> de verdade. Apareça para uma visita.
+              Para quem busca exclusividade, qualidade e resultado de verdade.
+              <br /><br />
+              Apareça para uma visita.
             </p>
 
             {/* MOBILE MAP: Visible only on mobile (< lg breakpoints) */}

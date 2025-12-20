@@ -39,7 +39,7 @@ export function Hero() {
 
         {/* Subtitle */}
         {/* Subtitle */}
-        <p className="text-[#D9D9D9] uppercase text-[4vw] md:text-lg tracking-wide mb-8 leading-snug" style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
+        <p className="text-[#D9D9D9] uppercase text-[4vw] md:text-[0.85rem] tracking-wide mb-8 leading-snug" style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
           APÓS PREENCHER O FORMULÁRIO ABAIXO, É SÓ VIR TREINAR!
         </p>
 
