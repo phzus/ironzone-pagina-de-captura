@@ -21,11 +21,11 @@ export function Location() {
 
   return (
     <section className="py-20 md:py-32 px-4 md:px-8 bg-[#0A0A0A]">
-      {/* Container max-w-[1140px] */}
-      <div className="max-w-[1140px] mx-auto">
+      {/* Container max-w-5xl (approx 1024px) to tighten layout */}
+      <div className="max-w-5xl mx-auto">
 
         {/* Two-Column Grid: Text Left, Map Right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
           {/* Left Column: Text Content */}
           <div>
@@ -46,12 +46,18 @@ export function Location() {
               VENHA NOS CONHECER
             </h2>
 
-            {/* Welcoming Paragraph - Simple and complementary */}
-            <p className="text-[#D9D9D9] text-lg mb-10 leading-relaxed max-w-md">
-              Para quem busca exclusividade, qualidade e resultado de verdade.
-              <br /><br />
-              Apareça para uma visita.
-            </p>
+            {/* Welcoming Paragraph - Split with smaller spacing */}
+            <div
+              className="text-[#D9D9D9] text-lg mb-10 leading-relaxed flex flex-col gap-3"
+              style={{ maxWidth: '356px' }}
+            >
+              <p>
+                Para quem busca exclusividade, qualidade e resultado de verdade.
+              </p>
+              <p>
+                Apareça para uma visita.
+              </p>
+            </div>
 
             {/* MOBILE MAP: Visible only on mobile (< lg breakpoints) */}
             <MapEmbed className="lg:hidden h-[350px] mb-10" />
