@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { Input } from '@/components/ui/input'
 import { StardustButton } from '@/components/ui/stardust-button'
@@ -10,13 +11,11 @@ interface FormData {
 }
 
 export function LeadForm() {
+  const navigate = useNavigate()
   const { register, handleSubmit, formState: { errors }, setValue } = useForm<FormData>()
 
   const onSubmit = (data: FormData) => {
-    const message = encodeURIComponent(
-      `Olá, preenchi o formulário no site e quero meu Free Pass na IronZone! Meu nome é ${data.nome}.`
-    )
-    window.location.href = `https://wa.me/5521995807367?text=${message}`
+    navigate('/obrigado', { state: { nome: data.nome } })
   }
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {

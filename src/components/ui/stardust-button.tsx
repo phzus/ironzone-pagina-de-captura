@@ -34,13 +34,14 @@ export const StardustButton = ({
     fontWeight: 600, // Medium/Semi-bold
     fontFamily: "Helvetica, Arial, sans-serif", // Changed to Helvetica as requested
     color: '#0A0A0A !important' as any,
-    padding: '16px 32px',
+    padding: '16px 42px',
     borderRadius: 'inherit',
     position: 'relative',
     overflow: 'hidden',
     zIndex: 1,
     textDecoration: 'none',
     textShadow: 'none',
+    lineHeight: '1.2',
     // Force solid text (override any gradient inheritance)
     WebkitTextFillColor: '#0A0A0A',
     WebkitTextStroke: '0',
@@ -99,7 +100,7 @@ export const StardustButton = ({
         onClick={onClick}
         {...props}
       >
-        <div className="wrap" style={wrapStyle}>
+        <div className="wrap" style={{ ...wrapStyle, padding: '16px 42px' }}>
           {children}
         </div>
       </button>

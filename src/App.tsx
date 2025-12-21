@@ -1,14 +1,18 @@
-import { Hero } from '@/components/Hero'
-import { Location } from '@/components/Location'
-import { Footer } from '@/components/Footer'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { Captura } from '@/pages/captura'
+import { Obrigado } from '@/pages/obrigado'
 
 function App() {
   return (
-    <main className="bg-[#0A0A0A] min-h-screen">
-      <Hero />
-      <Location />
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Captura />} />
+        <Route path="/captura" element={<Captura />} />
+        <Route path="/obrigado" element={<Obrigado />} />
+        <Route path="/thank-you" element={<Navigate to="/obrigado" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
