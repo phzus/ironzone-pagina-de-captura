@@ -29,7 +29,7 @@ export function Hero() {
         {/* Headline - FREE PASS */}
         {/* Headline - FREE PASS */}
         <h1
-          className="text-gradient-gold font-bold mb-4 leading-none text-[18vw] md:text-[90px]"
+          className="text-gradient-gold font-bold mb-4 leading-none text-[17vw] md:text-[90px]"
           style={{
             fontFamily: "'Libre Caslon Display', serif",
           }}
@@ -39,7 +39,7 @@ export function Hero() {
 
         {/* Subtitle */}
         {/* Subtitle */}
-        <p className="text-[#D9D9D9] uppercase text-[5vw] md:text-[0.85rem] tracking-wide mb-8 leading-snug" style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
+        <p className="text-[#D9D9D9] uppercase text-[4vw] md:text-[0.85rem] tracking-wide mb-8 leading-snug" style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
           APÓS PREENCHER O FORMULÁRIO ABAIXO, É SÓ VIR TREINAR!
         </p>
 

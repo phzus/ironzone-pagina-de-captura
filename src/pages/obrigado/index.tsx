@@ -29,7 +29,7 @@ export function Obrigado() {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      `Olá! Acabei de me cadastrar na IronZone${firstName ? ` (sou ${firstName})` : ''} e tenho algumas dúvidas.`
+      `Olá! Acabei de me cadastrar para o Free Pass na IronZone${firstName ? ` (sou ${firstName})` : ''} e tenho algumas dúvidas.`
     )
     window.open(`https://wa.me/5521995807367?text=${message}`, '_blank')
   }
